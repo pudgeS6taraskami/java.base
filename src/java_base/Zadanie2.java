@@ -6,7 +6,7 @@ public class Zadanie2 {
         Scanner sc = new Scanner(System.in);
         int money;
         money = sc.nextInt();
-        int proc = money / 10;
+        int proc = money / 10; // Деление на 10
         int countYear = 0;
 
         for (int i = proc; i <= 1000000; i = i + proc) {
