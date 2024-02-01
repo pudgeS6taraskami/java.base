@@ -8,9 +8,13 @@ public class Zadanie3January25 {
         double sredstvo = sc.nextDouble();
         System.out.println("Введите количество тарелок");
         double tarelki = sc.nextDouble();
-        for (sredstvo = sredstvo - tarelki; sredstvo > 0; sredstvo = sredstvo - 0.5) {
+        for (sredstvo = sredstvo - tarelki; sredstvo > 0; sredstvo--) {
             tarelki--;
-            System.out.println(tarelki);
+            if (tarelki == tarelki - 1) {
+                sredstvo = sredstvo - 0.5;
+
+                System.out.println(sredstvo);
+            }
         }
 
     }
